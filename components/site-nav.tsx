@@ -12,7 +12,7 @@ export function SiteNav() {
         <div className="flex items-center gap-6 text-sm">
           <Link className="hover:underline" href="/">Home</Link>
           <Link className="hover:underline" href="/projects">Projects</Link>
-          <Link className="hover:underline" href="/resume">Background</Link>
+          <Link className="hover:underline" href="/resume">Resume</Link>
           <Link className="hover:underline" href="/contact">Contact</Link>
           <ThemeToggle />
         </div>
