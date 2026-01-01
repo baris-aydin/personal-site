@@ -145,9 +145,9 @@ export default function HomePage() {
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-[1.15] fade-in-up delay-100">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-[1.2] fade-in-up delay-100">
             <span className="block text-foreground">Hi, I'm</span>
-            <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent leading-[1.15] pb-1">Baris Aydin</span>
+            <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent leading-[1.2] pb-1">Baris Aydin</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto fade-in-up delay-200">

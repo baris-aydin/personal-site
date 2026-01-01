@@ -1,4 +1,4 @@
-import { SiteNav } from "@/components/site-nav";
+import { PageShell } from "@/components/page-shell";
 import Link from "next/link";
 
 type TimelineEntry = {
@@ -69,14 +69,14 @@ function TimelineItem({
     <div className="grid grid-cols-[20px_1fr] gap-4">
       {/* Left rail */}
       <div className="relative flex justify-center">
-        <div className="mt-2 h-3 w-3 rounded-full border bg-background" />
+        <div className="mt-2 h-3 w-3 rounded-full border border-border bg-background" />
         {!isLast && <div className="absolute top-6 bottom-0 w-px bg-border" />}
       </div>
 
       {/* Content */}
       <div className="pb-10">
         <div className="flex flex-col gap-1">
-          <h3 className="text-base font-semibold">{title}</h3>
+          <h3 className="text-base font-semibold text-foreground">{title}</h3>
           <div className="text-sm text-muted-foreground">
             {org} • {location}
           </div>
@@ -103,8 +103,8 @@ function TimelineSection({
   items: TimelineEntry[];
 }) {
   return (
-    <section className="rounded-xl border p-6">
-      <h2 className="text-lg font-semibold">{heading}</h2>
+    <div>
+      <h2 className="text-lg font-semibold text-foreground">{heading}</h2>
       {subheading ? (
         <p className="mt-1 text-sm text-muted-foreground">{subheading}</p>
       ) : null}
@@ -118,34 +118,42 @@ function TimelineSection({
           />
         ))}
       </div>
-    </section>
+    </div>
   );
 }
 
 export default function ResumePage() {
   return (
-    <main className="min-h-screen">
-      <SiteNav />
-
+    <PageShell>
       <div className="mx-auto max-w-5xl px-6 py-14">
-        <h1 className="text-3xl font-bold tracking-tight">Background</h1>
-        <p className="mt-3 max-w-2xl text-muted-foreground">
-          A quick timeline of my experience and education. For the full details,
-          download the PDF below.
-        </p>
+        <div className="fade-in-up">
+          <span className="mb-2 block font-medium text-primary">Background</span>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+            Experience & Education
+          </h1>
+          <p className="mt-3 max-w-2xl text-muted-foreground">
+            A quick timeline of my experience and education, plus a PDF download.
+          </p>
+        </div>
 
         <div className="mt-10 grid gap-8">
-          <TimelineSection
-            heading="Experience"
-            subheading="Most recent first."
-            items={EXPERIENCE}
-          />
+          {/* Experience */}
+          <section className="fade-in-up card-hover rounded-2xl border border-border bg-card/60 p-6 delay-100">
+            <TimelineSection
+              heading="Experience"
+              subheading="Most recent first."
+              items={EXPERIENCE}
+            />
+          </section>
 
-          <TimelineSection heading="Education" items={EDUCATION} />
+          {/* Education */}
+          <section className="fade-in-up card-hover rounded-2xl border border-border bg-card/60 p-6 delay-200">
+            <TimelineSection heading="Education" items={EDUCATION} />
+          </section>
 
-          {/* PDF download (bottom) */}
-          <section className="rounded-xl border p-6">
-            <h2 className="text-lg font-semibold">Resume PDF</h2>
+          {/* PDF download */}
+          <section className="fade-in-up card-hover rounded-2xl border border-border bg-card/60 p-6 delay-300">
+            <h2 className="text-lg font-semibold text-foreground">Resume PDF</h2>
             <p className="mt-2 text-sm text-muted-foreground">
               Download the one-page resume version.
             </p>
@@ -174,7 +182,8 @@ export default function ResumePage() {
           </section>
         </div>
       </div>
-    </main>
+    </PageShell>
   );
 }
+
 
