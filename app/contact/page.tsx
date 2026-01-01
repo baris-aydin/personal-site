@@ -19,7 +19,7 @@ export default function ContactPage() {
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
           <a
             className="fade-in-up delay-100 card-hover rounded-2xl border bg-card/60 p-6 block"
-            href="mailto:you@example.com"
+            href="mailto:brsalpaydn@gmail.com"
           >
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
@@ -31,12 +31,12 @@ export default function ContactPage() {
             <p className="mt-3 text-sm text-muted-foreground">
               Reach out directly via email.
             </p>
-            <p className="mt-4 text-sm underline">you@example.com</p>
+            <p className="mt-4 text-sm underline">brsalpaydn@gmail.com</p>
           </a>
 
           <Link
             className="fade-in-up delay-200 card-hover rounded-2xl border bg-card/60 p-6 block"
-            href="https://github.com/your-username"
+            href="https://github.com/baris-aydin"
             target="_blank"
             rel="noreferrer"
           >
@@ -50,12 +50,12 @@ export default function ContactPage() {
             <p className="mt-3 text-sm text-muted-foreground">
               Source code, projects, and experiments.
             </p>
-            <p className="mt-4 text-sm underline">github.com/your-username</p>
+            <p className="mt-4 text-sm underline">github.com/baris-aydin</p>
           </Link>
 
           <Link
             className="fade-in-up delay-300 card-hover rounded-2xl border bg-card/60 p-6 block sm:col-span-2"
-            href="https://linkedin.com/in/your-handle"
+            href="https://linkedin.com/in/baris-aydin-323837349"
             target="_blank"
             rel="noreferrer"
           >
@@ -69,7 +69,7 @@ export default function ContactPage() {
             <p className="mt-3 text-sm text-muted-foreground">
               Professional background and updates.
             </p>
-            <p className="mt-4 text-sm underline">linkedin.com/in/your-handle</p>
+            <p className="mt-4 text-sm underline">linkedin.com/in/baris-aydin-323837349</p>
           </Link>
         </div>
       </div>

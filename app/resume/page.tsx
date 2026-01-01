@@ -127,7 +127,7 @@ export default function ResumePage() {
     <PageShell>
       <div className="mx-auto max-w-5xl px-6 py-14">
         <div className="fade-in-up">
-          <span className="mb-2 block font-medium text-primary">Background</span>
+          <span className="mb-2 block font-medium text-primary">Resume</span>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
             Experience & Education
           </h1>

@@ -14,7 +14,7 @@ export function SiteNav() {
             Home
           </Link>
           <Link className="text-muted-foreground hover:text-foreground transition-colors" href="/projects">
-            Projects
+            Portfolio
           </Link>
           <Link className="text-muted-foreground hover:text-foreground transition-colors" href="/resume">
             Resume
