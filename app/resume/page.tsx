@@ -154,9 +154,9 @@ export default function ResumePage() {
           {/* PDF download */}
           <section className="fade-in-up card-hover rounded-2xl border border-border bg-card/60 p-6 delay-300">
             <h2 className="text-lg font-semibold text-foreground">Resume PDF</h2>
-            <p className="mt-2 text-sm text-muted-foreground">
+            {/*<p className="mt-2 text-sm text-muted-foreground">
               Download the one-page resume version.
-            </p>
+            </p>*/}
 
             <div className="mt-5 flex flex-wrap items-center gap-3">
               <a
@@ -175,10 +175,6 @@ export default function ResumePage() {
                 View Projects
               </Link>
             </div>
-
-            <p className="mt-3 text-xs text-muted-foreground">
-              Put your file at <code>public/resume.pdf</code>.
-            </p>
           </section>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ThemeToggle } from "@/components/theme-toggle";
+/*import { ThemeToggle } from "@/components/theme-toggle";*/
 
 export function SiteNav() {
   return (
@@ -22,7 +22,7 @@ export function SiteNav() {
           <Link className="text-muted-foreground hover:text-foreground transition-colors" href="/contact">
             Contact
           </Link>
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
         </div>
       </nav>
     </header>
