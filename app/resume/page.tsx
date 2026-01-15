@@ -14,11 +14,12 @@ const EXPERIENCE: TimelineEntry[] = [
     title: "Software Developer – OCR Automation Project",
     org: "Freelance Software Development",
     location: "Ottawa, ON",
-    date: "Sep 2025 – Dec 2025",
+    date: "Sep 2025 – Present",
     bullets: [
       "Built an OCR-powered screenshot indexing system (Python, PaddleOCR, OpenCV, Streamlit) to extract and filter timestamps from Twitter/X screenshots.",
       "Implemented date/time parsing with exact, windowed, and time-range matching for reliable retrieval.",
       "Containerized the app with Docker and deployed on Railway for accessible, scalable usage.",
+      "Currently migrating the system to a FastAPI backend with async OCR, Redis workers, Postgres, and object storage.",
     ],
   },
   {
